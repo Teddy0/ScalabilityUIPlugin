@@ -1,0 +1,22 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "Scalability UI Plugin",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Teddy",
+	"CreatedByURL" : "http://epicgames.com",
+	"EngineVersion" : "4.3.0",
+	"Description" : "Pops up a window on launch to allow users to change graphics settings. A bit like Unity ;)",
+	"Category" : "Runtime",
+	"EnabledByDefault" : true,
+	
+	"Modules" :
+	[
+		{
+			"Name" : "ScalabilityUIPlugin",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreLoadingScreen"
+		}
+	]
+}
