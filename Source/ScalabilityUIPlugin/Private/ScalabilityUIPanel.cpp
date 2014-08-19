@@ -49,7 +49,7 @@ void SScalabilityUIPanel::OnResolutionScaleChanged(float InValue)
 	//Write the values into the ini
 	const TCHAR* OculusSettings = TEXT("Oculus.Settings");
 	GConfig->SetBool(OculusSettings, TEXT("bOverrideScreenPercentage"), CachedQualityLevels.ResolutionQuality < Scalability::MaxResolutionScale, GEngineIni);
-	GConfig->SetFloat(OculusSettings, TEXT("ScreenPercentage"), (float)CachedQualityLevels.ResolutionQuality, GEngineIni);
+	GConfig->SetFloat(OculusSettings, TEXT("ScreenPercentage"), (float)CachedQualityLevels.ResolutionQuality * 1.35f, GEngineIni);
 }
 
 float SScalabilityUIPanel::GetResolutionScale() const
